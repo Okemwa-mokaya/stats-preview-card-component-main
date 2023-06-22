@@ -38,7 +38,7 @@ body{
 }
 .stats{
   display: grid;
-  max-width: 600px;
+  max-width: 800px;
   overflow: hidden;
   background-color: var(--Dark-desaturated-blue);
   border-radius: 0.5rem;
@@ -57,7 +57,7 @@ body{
 .stats__title{
   font-family: "Inter", sans-serif;
   font-weight: 700px;
-  font-size: 20px;
+  font-size: 30px;
   text-align: start;
   margin-bottom: 1rem;
 }
@@ -71,7 +71,7 @@ p{
  color: hsla(0, 0%, 100%, 0.75);
  font-family: "Lexend Deca", sans-serif;
  font-weight: 400;
- font-size: 10px;
+ font-size: 16px;
  text-align: start;
  margin-bottom: 2rem;
 }
@@ -91,7 +91,7 @@ p{
 .stats__templates span,
 .stats__queries span{
   color: hsla(0, 0%, 100%, 0.6);
-  font-size: 10px;
+  font-size: 15px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -102,7 +102,7 @@ h4.stats__queries{
   color: var(--White);
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
 }
 .stats__image{
   position: relative;
