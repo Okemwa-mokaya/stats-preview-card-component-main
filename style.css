@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+:root{
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+picture{
+  max-width: 100%;
+  display: block;
+}
+body{
+  font-size: 15px;
+  background-color: var(--Very-dark-blue);
+
+  /* for this project only */
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 1rem;
+}
+@media (max-width: 600px){
+  body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 1rem;
+  }
+}
+.stats{
+  display: grid;
+  max-width: 600px;
+  overflow: hidden;
+  background-color: var(--Dark-desaturated-blue);
+  border-radius: 0.5rem;
+}
+@media (min-width: 600px){
+  .stats{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.stats__content{
+  display: grid;
+  text-align: center;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+.stats__title{
+  font-family: "Inter", sans-serif;
+  font-weight: 700px;
+  font-size: 20px;
+  text-align: start;
+  margin-bottom: 1rem;
+}
+h1.stats__title{
+ color: var(--White);
+}
+.stats__title span{
+  color: var(--Soft-violet);
+}
+p{
+ color: hsla(0, 0%, 100%, 0.75);
+ font-family: "Lexend Deca", sans-serif;
+ font-weight: 400;
+ font-size: 10px;
+ text-align: start;
+ margin-bottom: 2rem;
+}
+.flex-box{
+  display: flex;
+  justify-content: space-between;
+}
+.stats__companies,
+.stats__templates,
+.stats__queries{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.stats__companies span,
+.stats__templates span,
+.stats__queries span{
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h2.stats__companies,
+h3.stats__templates,
+h4.stats__queries{
+  color: var(--White);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+.stats__image{
+  position: relative;
+}
+.stats__image::after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.5;
+}
+@media (max-width: 600px){
+  .stats__image{
+    order: -1;
+  }
+}
